@@ -1,6 +1,6 @@
 ---
 title: "Lab 08 - Predicting rain"
-author: "INSERT NAME HERE"
+author: "Yara Kanaan"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -47,6 +47,7 @@ weather %>%
 
 ```{r}
 
+weather_noNA <- RainTomorrow, na.rm
 ```
 
 2. Which cities are the ones with more rain days? To do this, let's analyze the `RainToday` variable. 
@@ -61,7 +62,7 @@ We will focus our analysis on the city of `Portland`.
 Remove `eval=FALSE` from below once you have defined the object `weather_noNA`.
 
 ```{r eval=FALSE}
-# remove eval=FALSE
+
 weather_Portland <- weather_noNA %>%
   filter(Location == "Portland")
 ```
